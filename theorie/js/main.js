@@ -1,4 +1,4 @@
-import { initLatex, initHighlight } from "../../../js/utils.js"
+import { initLatex, initHighlight } from "../../js/utils.js"
 
 const hash = window.location.hash.substring("#/".length)
 
