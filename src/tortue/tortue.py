@@ -4,14 +4,9 @@ import matplotlib.pyplot as plt
 # ====================================
 # === Exemple d'utilisation:
 # 
-# import sys
-# 
-# # Ajoute le dossier du projet aux imports possibles
-# sys.path.insert(0, "")
-# 
 # import tortue
 # 
-# tortue.nouveauDessin(100, 100, False)
+# tortue.nouveau(100, 100, False)
 # 
 # tortue.afficherTortue()
 # 
@@ -28,17 +23,17 @@ import matplotlib.pyplot as plt
 # for i in range(8):
 #     tortue.avancer(10)
 #     tortue.tourner(45)
-#     tortue.afficherDessin(300, 300)
+#     tortue.afficher(300, 300)
 #
 # ====================================
 infos = None
 
 def verifierTortue():
     if infos == None:
-        print("Erreur: Il faut appeler la fonction nouveauDessin() avant d'utiliser la tortue.")
+        print("Erreur: Il faut appeler la fonction tortue.nouveau() avant d'utiliser la tortue.")
         raise
 
-def nouveauDessin(largeur = 100, hauteur = 100, afficher_axes = True):
+def nouveau(largeur = 100, hauteur = 100, afficher_axes = True):
     global infos
 
     infos = {
@@ -75,7 +70,7 @@ def avancer(distance):
         ligne_actuelle["list_x"].append(infos["x"])
         ligne_actuelle["list_y"].append(infos["y"])
     
-def afficherDessin(largeur_pixels = 300, hauteur_pixels = 300):
+def afficher(largeur_pixels = 300, hauteur_pixels = 300):
     verifierTortue()
 
     scale_ratio = largeur_pixels / infos["page"]["largeur"]
