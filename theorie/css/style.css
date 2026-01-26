@@ -17,8 +17,10 @@ body {
 }
 
 @media screen {
-    .slide:not(.active) {
-        display: none !important;
+    body:not(.show-all) {
+        .slide:not(.active) {
+            display: none !important;
+        }
     }
 }
 

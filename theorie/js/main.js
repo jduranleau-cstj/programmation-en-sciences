@@ -41,6 +41,8 @@ initHighlight()
 showSlide(current_index)
 updateFocusOverlay(0)
 
+initDebug()
+
 function showSlide(index) {
     if (current_active) {
         current_active.classList.remove("active")
@@ -106,4 +108,10 @@ function updateFocusOverlay(time) {
     focus_overlay.style.mask = `radial-gradient(circle 5rem at ${mouse.x}px ${mouse.y}px, rgb(0 0 0 / 0) 99%,  rgb(0,0,0) 100%)`
 
     requestAnimationFrame(updateFocusOverlay)
+}
+
+function initDebug() {
+    if (window.location.href.indexOf("?debug") !== -1) {
+        document.body.classList.add("show-all")
+    }
 }
