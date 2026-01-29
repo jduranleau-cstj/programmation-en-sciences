@@ -1,3 +1,7 @@
+:root {
+    --link-color: #4D2B8C;
+}
+
 html {
     font-size: 24px;
 }
@@ -60,6 +64,24 @@ header {
     }
 }
 
+.editor {
+    text-align: center;
+    margin: 20px 0px 40px;
+
+    a {
+        text-decoration: none;
+        color: var(--link-color);
+        border: 1px solid var(--link-color);
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: var(--link-color);
+            color: #fff;
+        }
+    }
+}
+
 main {
     margin: 70px 50px;
     font-size: 1rem;
@@ -92,16 +114,16 @@ main {
             gap: 20px;
 
             a {
-                --c: #4D2B8C;
+
 
                 text-decoration: none;
-                color: var(--c);
+                color: var(--link-color);
                 padding: 4px 10px;
                 border-radius: 5px;
-                border: 1px solid var(--c);
+                border: 1px solid var(--link-color);
 
                 &:hover {
-                    background-color: var(--c);
+                    background-color: var(--link-color);
                     color: #fff;
                 }
             }
