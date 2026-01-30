@@ -34,3 +34,11 @@ span.var {
     color: rgb(151, 31, 111);
     font-weight: bold;
 }
+
+.language-css .token.string,
+.style .token.string,
+.token.entity,
+.token.operator,
+.token.url {
+    background: none !important;
+}
