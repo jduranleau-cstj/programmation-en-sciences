@@ -19,7 +19,7 @@
 
 <div class="slide">
     <h1>Lire un fichier texte</h1>
-    <p>On peut lire le contenu d'un fichiers</p>
+    <p>On peut lire le contenu d'un fichier</p>
     <p>
     <pre><code class="language-python">with open("un_fichier.txt") as f:
     # Tout le texte du fichier en str:
@@ -111,18 +111,24 @@ print(prenom[3]) # a
             <td><code class="language-python">"abcd".find("d")</code></td>
             <td><code class="language-python">2</code></td>
         </tr>
-
-
     </table>
 </div>
 
 <div class="slide">
-    <h1>Une autre façon de formatter un <code class="language-python">str</code></h1>
+    <h1>"f-string" : Une autre façon de créer un <code class="language-python">str</code></h1>
     <p>
     <pre><code class="language-python">nom = "Iris"
 age = 24
 phrase = f"Utilisateur: {nom}, age: {age}"
 #        ^ le f est important!</code></pre>
+    </p>
+</div>
+
+<div class="slide">
+    <h1>Retour de ligne</h1>
+    <p>Pour représenter un retour de ligne en programmation, on utilise:</p>
+    <p style="text-align: center;">
+        <code style="font-size: 3rem" class="language-python">"\n"</code>
     </p>
 </div>
 
