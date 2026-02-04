@@ -1,0 +1,210 @@
+<div class="slide center intro">
+    <img src="../classes/shared/title_animation.svg">
+    <h1>Programmation en sciences</h1>
+    <h2>Cours 07</h2>
+</div>
+
+<div class="slide center">
+    <h1>Révision</h1>
+</div>
+
+<div class="slide recap">
+    <style>
+        .recap {
+            padding: 20px;
+            font-size: 0.5rem;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        table th,
+        table td {
+            padding: 0.1rem;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>Types</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><code class="language-python">int</code></td>
+            <td>Nombre entier</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">float</code></td>
+            <td>Nombre à décimale</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">str</code></td>
+            <td>Texte</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">bool</code></td>
+            <td>Booléen</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">list</code></td>
+            <td>Liste d'items</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">None</code></td>
+            <td>Aucune valeur</td>
+        </tr>
+    </table>
+    <p>
+    <pre><code class="language-python"># Conversions
+a = int(input("Nombre:"))
+b = a * 2
+
+a_str = str(b)
+print("Valeur: " + b)</code></pre>
+    </p>
+    <p>
+    <pre><code class="language-python">titre = "Matrice"
+
+if titre == "Pirate":
+    print("Jack")
+elif titre == "Matrice":
+    print("Neo")
+else:
+    print("Inconnu")
+    </code></pre>
+    </p>
+    <p>
+    <pre><code class="language-python">for i in range(10):
+    print(i)
+
+lettres = ["a", "b", "c"]
+
+for lettre in lettres:
+    print(lettre)
+    </code></pre>
+    </p>
+
+    <div>
+        <code class="language-python">import random</code>
+        <table>
+            <tr>
+                <th>Fonction</th>
+                <th></th>
+            </tr>
+            <tr>
+
+                <td><code class="language-python">random.random()</code></td>
+                <td><code class="language-python">float</code> 0 et 1</td>
+            </tr>
+            <tr>
+                <td><code class="language-python">random.randint(a, b)</code></td>
+                <td><code class="language-python">int</code> a et b</td>
+            </tr>
+            <tr>
+                <td><code class="language-python">random.uniform(a, b)</code></td>
+                <td><code class="language-python">float</code> a et b</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <code class="language-python">import math</code>
+        <table>
+            <tr>
+                <th>Fonction</th>
+            </tr>
+            <tr>
+
+                <td><code class="language-python">math.sqrt(n)</code></td>
+            </tr>
+            <tr>
+                <td><code class="language-python">math.sin(n)</code></td>
+            </tr>
+            <tr>
+                <td><code class="language-python">math.cos(n)</code></td>
+            </tr>
+            <tr>
+                <td><code class="language-python">math.atan2(n)</code></td>
+            </tr>
+            <tr>
+                <td><code class="language-python">math.pi</code></td>
+            </tr>
+        </table>
+    </div>
+
+    <table>
+        <tr>
+            <th>Comparaisons</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><code class="language-python">5 &lt; 10</code></td>
+            <td>Plus petit</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">5 &lt;= 10</code></td>
+            <td>Plus petit ou égal</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">10 &gt; 5</code></td>
+            <td>Plus grand</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">10 &gt;= 5</code></td>
+            <td>Plus grand ou égal</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">10 == 10</code></td>
+            <td>Est égal</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">10 != 20</code></td>
+            <td>N'est pas égal</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">True and True</code></td>
+            <td>... Et ...</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">True or False</code></td>
+            <td>... Ou ...</td>
+        </tr>
+        <tr>
+            <td><code class="language-python">not False</code></td>
+            <td>Inverse le booléen</td>
+        </tr>
+    </table>
+
+    <p>
+    <pre><code class="language-python"># Fichier texte
+with open("fichier.txt") as f:
+    lignes = f.readlines()
+    
+    for ligne in lignes:
+        print(ligne) # str
+
+# Fichier CSV
+import csv
+
+with open("fichier.csv") as f:
+    lignes = csv.reader(f)
+    
+    for ligne in lignes:
+        print(ligne) # list</code></pre>
+    </p>
+
+    <p>
+    <pre><code class="language-python">import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = fig.add_subplot()
+
+# Instructions ici
+
+ax.set_title("Titre du graphique")
+ax.set_xlabel("Axe des X") 
+ax.set_ylabel("Axe des Y") 
+
+plt.show()</code></pre>
+    </p>
+
+</div>
