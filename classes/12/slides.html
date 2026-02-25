@@ -8,8 +8,9 @@
     <h1>Sujets de la semaine</h1>
     <div class="planning">
         <ul>
+            <li>Binaire</li>
             <li>Représentation en mémoire</li>
-            <li>Tests (jeu d'essais)</li>
+            <li>Tests de code</li>
         </ul>
     </div>
 </div>
@@ -55,6 +56,17 @@
 </div>
 
 <div class="slide">
+    <h1>La mémoire de l'ordinateur</h1>
+    <pre><code class="language-python">a = 10
+b = 20
+c = [30, 40]
+d = "Allo"</code></pre>
+    <pre><code class="">
+| 10 | 20 | 30 | 40 | A | l | l | o |
+  a    b    -- c --  ------ d ------</code></pre>
+</div>
+
+<div class="slide">
     <h1>Processeurs et nombres de "bits"</h1>
     <p>De nos jours, presque tous nos processeurs sont en 64 bits.</p>
     <table>
@@ -82,6 +94,20 @@
             </td>
         </tr>
     </table>
+</div>
+
+<div class="slide">
+    <h1>Tests de code</h1>
+    <p>Les "tests" sont des bouts de code qui valident le bon fonctionnement du reste du code.</p>
+    <pre><code class="language-python">def addition(a, b):
+    return a * b # Oops, une erreur ici!
+
+assert addition(10, 20) == 30, "Ajout de 10 et 30"</code></pre>
+    <p><img src="../classes/12/medias/assert.png" style="height: 25vh"></p>
+</div>
+
+<div class="slide center">
+    <p style="font-size: 2rem"><code class="language-python">assert 10 > 5, "Message d'erreur"</code></p>
 </div>
 
 <div class="slide center">
