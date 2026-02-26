@@ -1,9 +1,22 @@
+:root {
+    --text-color: #111;
+    --bg-color: #fff;
+
+    @media (prefers-color-scheme: dark) {
+        --text-color: #fff;
+        --bg-color: #151515;
+    }
+}
+
+
 html {
     font-size: 24px;
 }
 
 body {
     font-family: Inter, Arial;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 .container {
