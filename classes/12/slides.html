@@ -61,9 +61,26 @@
 b = 20
 c = [30, 40]
 d = "Allo"</code></pre>
-    <pre><code class="">
-| 10 | 20 | 30 | 40 | A | l | l | o |
-  a    b    -- c --  ------ d ------</code></pre>
+    <p>
+    <table>
+        <tr>
+            <th>a</th>
+            <th>b</th>
+            <th colspan="2">c</th>
+            <th colspan="4">d</th>
+        </tr>
+        <tr>
+            <td style="width: 2rem; text-align: center;">10</td>
+            <td style="width: 2rem; text-align: center;">20</td>
+            <td style="width: 2rem; text-align: center;">30</td>
+            <td style="width: 2rem; text-align: center;">40</td>
+            <td style="width: 2rem; text-align: center;">A</td>
+            <td style="width: 2rem; text-align: center;">l</td>
+            <td style="width: 2rem; text-align: center;">l</td>
+            <td style="width: 2rem; text-align: center;">o</td>
+        </tr>
+    </table>
+    </p>
 </div>
 
 <div class="slide">
@@ -96,6 +113,10 @@ d = "Allo"</code></pre>
     </table>
 </div>
 
+<div class="slide center">
+    <img src="../classes/12/medias/tests.png" style="height: 90vh">
+</div>
+
 <div class="slide">
     <h1>Tests de code</h1>
     <p>Les "tests" sont des bouts de code qui valident le bon fonctionnement du reste du code.</p>
@@ -108,10 +129,6 @@ assert addition(10, 20) == 30, "Ajout de 10 et 30"</code></pre>
 
 <div class="slide center">
     <p style="font-size: 2rem"><code class="language-python">assert 10 > 5, "Message d'erreur"</code></p>
-</div>
-
-<div class="slide center">
-    <img src="../classes/12/medias/tests.png" style="height: 90vh">
 </div>
 
 <div class="slide center">
