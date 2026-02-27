@@ -1,6 +1,7 @@
 :root {
     --text-color: #111;
     --bg-color: #fff;
+    --link-color: rgb(0, 110, 255);
 
     @media (prefers-color-scheme: dark) {
         --text-color: #fff;
@@ -11,6 +12,10 @@
 
 html {
     font-size: 24px;
+}
+
+a {
+    color: var(--link-color);
 }
 
 body {
