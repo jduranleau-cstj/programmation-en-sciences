@@ -50,7 +50,13 @@ print(c)</code></pre>
 </div>
 
 <div class="slide center">
-    <h1 style="font-size: 1.1rem; padding: 0px 15%;">Avec Jupyter, il faudra malheureusement redémarrer le Kernel quand on change un fichier .py</h1>
+    <h1 style="font-size: 1.1rem; padding: 0px 15%;">Pour s'assurer que le contenu des fichiers externes est rechargé, il faudra ajouter quelques lignes:</h1>
+    <p>
+    <pre><code class="language-python">import importlib
+import mon_fichier
+
+importlib.reload(mon_fichier)</code></pre>
+    </p>
 </div>
 
 <div class="slide">
